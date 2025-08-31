@@ -35,7 +35,7 @@ The project schema is represented by the ERD below:
 
 ## Optimizing Querries
 
-'''sql
+```sql
 EXPLAIN ANALYZE
 SELECT * FROM sales
 WHERE store_id = 'ST-31';
@@ -45,7 +45,7 @@ WHERE store_id = 'ST-31';
 CREATE INDEX sales_store_id ON sales(store_id);
 CREATE INDEX sales_sale_date ON sales(sale_date);
 CREATE INDEX sales_product_id ON sales(product_id);
-'''
+```
 
 
 
